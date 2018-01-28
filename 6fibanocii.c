@@ -1,15 +1,15 @@
 #include<stdio.h>
 void main()
 {
-    int f=0,s=1,n,limit,i;
+    int f=0,s=1,b,lim,i;
     printf("enter the limit");
-    scanf("%d",&limit);
+    scanf("%d",&lim);
     printf("%d%d",f,s);
-    for(i=2;i<=limit;i++)
+    for(i=2;i<=lim;i++)
     {
-        n=f+s;
+        b=f+s;
         f=s;
-        s=n;
-        printf("%d",n);
+        s=b;
+        printf("%d",b);
     }
 }
