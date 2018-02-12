@@ -8,7 +8,7 @@ int main()
 	{
 	b=a%10;
 	if((b%2)!=0)
-	printf("odd number is %d",a);
+	printf("odd number is %d",b);
 	a=a/10;
 	}
 	return 0;
