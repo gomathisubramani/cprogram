@@ -1,18 +1,33 @@
 #include<stdio.h>
 #include<string.h>
-int main()
+void main()
 {
-	char a[10],b[10];
-	int i;
+	int i,j,k,count=0;
+	char a[10];
 	printf("enter the string");
 	scanf("%s",a);
-	b=strrev(a);
-	if((strcmp(a,b))==0)
+	i=0;
+	while(a[i]!='\0')
 	{
-		printf("the string is palindrome");
+		i++;
+	}
+	k=i-1;
+	for(j=0;j<i;j++)
+	{
+		if(a[j]==a[k])
+		{
+			count++;
+			//printf("--->%d\n",count);
+		}
+		k--;
+	}
+	
+	if(i==count)
+	{
+		printf("yes");
 	}
 	else
 	{
-		printf("the string is not palindrome");
+		printf("no");
 	}
 }
