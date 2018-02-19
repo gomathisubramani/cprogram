@@ -2,12 +2,12 @@
 #include<string.h>
 int main()
 {
-	char a[100],c;
+	char y[100],s;
 	int b;
 	printf("enter the string");
-	scanf("%s",a);
-	b=strlen(a);
-	c=b/2;
-	a[c]='*';
-	printf("the string is %s",a);
+	scanf("%s",y);
+	b=strlen(y);
+	s=b/2;
+	a[s]='*';
+	printf("the string is %s",y);
 }
