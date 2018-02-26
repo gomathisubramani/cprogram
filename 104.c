@@ -1,9 +1,10 @@
 #include<stdio.h>
-void main()
+#include<math.h>
+int main()
 {
-    int a,b,c;
+    int a,b,power;
     printf("\n enter the number");
     scanf("%d%d",&a,&b);
-    c=a^b;
-    printf( "%d",c);
+    power=pow(a,b);
+    printf( "%d",power);
 }
