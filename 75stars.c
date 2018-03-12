@@ -8,6 +8,6 @@ int main()
 	scanf("%s",y);
 	b=strlen(y);
 	s=b/2;
-	a[s]='*';
+	y[s]='*';
 	printf("the string is %s",y);
 }
